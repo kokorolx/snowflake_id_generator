@@ -28,15 +28,23 @@ $ gem install snowflake_id_generator
 ```
 
 ## Usage
+```ruby
 require 'snowflake_id_generator'
+```
 
 # Create a new Snowflake ID generator
+```ruby
 generator = Snowflake::IdGenerator.new(datacenter_id, worker_id)
+```
 
 # Generate a unique ID
+```ruby
 id = generator.next_id
+```
 
 # Analyze the generated ID
+```ruby
 analyzer = Snowflake::IdAnalyzer.new(id)
 analysis_result = analyzer.analyze
+```
 
